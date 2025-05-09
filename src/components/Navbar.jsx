@@ -35,7 +35,8 @@ const Navbar = () => {
                     {/* Desktop Button */}
                     <div className="hidden lg:flex items-center space-x-4">
                         <Custombtn
-                            btn={<>Get Started <Up_Arrow /></>}
+                            btn="Get Started"
+                            arrow={<Up_Arrow />}
                             className="bg-white text-black font-bold px-6 py-3 rounded-full transition-all duration-300 transform hover:bg-[#003459] hover:text-white hover:scale-105"
                         />
                     </div>
@@ -64,7 +65,8 @@ const Navbar = () => {
                 ))}
 
                 <Custombtn
-                    btn={<>Get Started <Up_Arrow /></>}
+                    btn="Get Started"
+                    arrow={<Up_Arrow />}
                     className="bg-[#003459F5] text-white font-bold px-6 py-3 rounded-full transition-all duration-300 transform hover:bg-black hover:text-white hover:scale-105"
                 />
             </div>
