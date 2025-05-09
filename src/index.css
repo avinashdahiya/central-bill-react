@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('/src/assets/fonts/helvetica-rounded-bold-5871d05ead8de.otf') format('woff2');
+}
+
+body{
+        font-family: Helvetica;
+}
+html {
+    scroll-behavior: smooth;
+}
