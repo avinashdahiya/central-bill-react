@@ -1,35 +1,55 @@
 import React from 'react';
 import Custombtn from './common/Custombtn';
 import CustomContent from './common/CustomContent';
+import CustomHeading from './common/CustomHeading';
+import CustomInput from './common/CustomInput';
 
 const JoinNews = () => {
     return (
-        <section id="newsletter">
-            <div className="bg-[url('./assets/images/png/news.png')] bg-no-repeat bg-cover bg-center transform translate-y-[20%] lg:translate-y-[50%] p-4 container max-w-[1140px] mx-auto">
+        <div>
+            <div className="bg-[url(./assets/images/png/news.png)] bg-cover bg-center translate-y-[20%] transform lg:translate-y-[50%] p-4 container max-w-[1140px] mx-auto">
                 <div className="max-w-[620px] flex flex-col justify-center items-center mx-auto">
-                    <h2 className="font-normal text-[38px] md:text-[48px] leading-[110%] text-center capitalize text-black pt-[20px] md:pt-[54px]">
-                        Join Our <span className="font-bold">Newsletter</span>
-                    </h2>
-
+                    <CustomHeading
+                        headClass="text-center pt-8"
+                        headtext="Join Our"
+                        headSpan2="Newsletter"
+                    />
                     <CustomContent
                         content="Stay up to date with the latest deals, energy-saving tips, and exclusive offers! Sign up for our newsletter and never miss out on great savings opportunities again."
-                        className="pt-4 text-black opacity-90 pb-[38px] text-center"
+                        className="pt-4 text-[#00171F] opacity-90 pb-[38px] text-center"
                     />
+                </div>
 
-                    <label className="relative flex items-center w-full max-w-[476px] px-4 sm:px-0 mb-[20px] md:mb-[54px]">
-                        <input
-                            type="email"
-                            placeholder="Enter your email"
-                            className="w-full px-[22px] py-[24px] rounded-[0px_100px_100px_20px] border border-gray-300 text-gray-700 text-base leading-[150%] focus:outline-none focus:ring-2 focus:ring-[#007EA7] transition"
-                        />
-                        <Custombtn
-                            btn="Submit"
-                            className="absolute top-1/2 -translate-y-1/2 right-[12px] sm:right-[10px] text-white font-semibold bg-[#007EA7] px-6 py-3 rounded-full transition-all duration-300 hover:bg-[#006D8F] hover:text-white hover:border hover:border-[#007EA7]"
-                        />
-                    </label>
+                <div className="flex items-center relative max-w-[476px] mx-auto mb-[30px] md:mb-[50px]">
+                    <CustomInput
+                        type="email"
+                        placeholder="Enter your email"
+                        inputClass="pr-[160px]"
+                    />
+                    <Custombtn
+                        btnClass="absolute z-10 right-[10px] bg-[#007EA7] text-white hover:bg-[#005f7a] transition-all duration-300"
+                        btnText="Submit"
+                        whitesvg={
+                            <svg
+                                width="15"
+                                height="16"
+                                viewBox="0 0 15 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M1 14.3691L14 1.36914M14 1.36914V13.8491M14 1.36914H1.52"
+                                    stroke="white"
+                                    strokeWidth="1.93338"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
+                        }
+                    />
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 

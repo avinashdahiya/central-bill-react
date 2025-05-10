@@ -47,7 +47,7 @@ const Accordian = () => {
                                         className={`overflow-hidden transition-all duration-500 ease-in-out 
                                             ${isOpen ? 'max-h-[200px] mt-2 opacity-100' : 'max-h-0 opacity-0'}`}
                                     >
-                                        <p className="text-base text-[#00171F] opacity-90 leading-[160%] font-normal">
+                                        <p className="md:mt-2 text-base text-[#00171F] opacity-90 leading-[160%] font-normal ml-19">
                                             {item.description}
                                         </p>
                                     </div>

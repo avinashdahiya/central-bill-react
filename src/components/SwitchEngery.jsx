@@ -28,10 +28,9 @@ const SwitchEnergy = () => {
                             <li className='font-normal text-base leading-[150%] text-[#00171F] mt-2'>Get better customer service.</li>
                             <li className='font-normal text-base leading-[150%] text-[#00171F] mt-2'>Explore greener, more sustainable energy options.</li>
                         </ul>
-                        <Custombtn
-                            btn="Compare With Us"
-                            className='bg-[#00A8E8] max-w-[201px] text-white font-bold mt-[42px] hover:bg-[#006D8F] hover:text-white border-2 border-[#00A8E8] transition-all duration-300 transform hover:scale-105'
-                        />
+                       <Custombtn btnClass="max-w-[210px] mt-[42px]" btnText="Compare With Us" whitesvg={<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 14.3691L14 1.36914M14 1.36914V13.8491M14 1.36914H1.52" stroke="white" stroke-width="1.93338" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>} />
                     </div>
                 </div>
             </div>
